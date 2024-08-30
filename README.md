@@ -27,10 +27,10 @@ Syriatel is a telecommunications company providing mobile network services in Sy
 
 ## The Data
 
-We used data from Syriatel's database with relevant features combined in the ```syriatel_customer_churn.csv``` that can be viewed [here](./data/syriatel_customer_churn.csv). This data contains multiple features that we were to analyze to predict whether a customer would continue using Syriatel services or would churn. These features include number and length of calls made by a customer at various times and which plans they have subscribed to. The target feature is the churn column which tells us whether or not the customer churned.
+We used data from Syriatel's database with relevant features collated in the ```syriatel_customer_churn.csv``` that can be viewed [here](./data/syriatel_customer_churn.csv). This data contains multiple features that we were to analyze to predict whether a customer would continue using Syriatel services or would churn. These features include number and length of calls made by a customer at various times and which plans they have subscribed to. The target feature is the churn column which tells us whether or not the customer churned.
 
 ## Preprocessing
-The csv data was split into training and test sets. The train set was preprocessed in various ways including dropping features deemed irrelevant for our modelling strategy, one-hot encoding categorical variables and standardizing continuous features. These transformations were later also applied to the test set for its use in testing the models.
+The csv data was split into training and test sets. The train set was preprocessed in various ways including dropping features with high correlations to others, one-hot encoding categorical variables and standardizing continuous features. These transformations were later also applied to the test set for its use in testing the models.
 
 ## Modelling
 Two modelling techniques were used to develop binary classifiers that predict whether a customer would churn or not.
